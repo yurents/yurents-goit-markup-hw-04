@@ -70,6 +70,7 @@ img {
   text-align: center;
   margin-bottom: 50px;
   letter-spacing: 0.03em;
+  color: var(--second-title-color);
 }
 .logo {
   font-family: "Raleway";
@@ -142,6 +143,11 @@ img {
 .header-mail:focus {
   color: var(--accent-color);
 }
+.header-mail-icon {
+  fill: #757575;
+  text-align: center;
+  margin-right: 10px;
+}
 
 .header-tel {
   margin-left: 50px;
@@ -155,6 +161,9 @@ img {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+}
+.header-tel-icon {
+  margin-right: 10px;
 }
 .header-conect {
   margin-left: auto;
@@ -213,6 +222,24 @@ img {
 }
 /* HERO SECTION */
 
+.hero-responsibility-item {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
+.hero-responsibility-item + .hero-responsibility-item {
+  margin-left: 30px;
+}
+.hero-responsibility-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
 .hero-list {
   display: flex;
 }
@@ -246,15 +273,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.second-hero-title {
-  color: var(--second-title-color);
-}
 
 /*                   SECOND-HERO                  */
 
-.team-title {
-  color: var(--second-title-color);
-}
 .hero-image-list {
   display: flex;
 }
@@ -333,6 +354,41 @@ img {
 .team-social-link:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+/*                             HERO-CLIENTS */
+.regular-customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.regular-customers-item {
+  width: 170px;
+  height: 92px;
+}
+.regular-customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+.regular-customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.regular-customers-icon {
+  fill: currentColor;
+}
+.regular-customers-link:hover,
+.regular-customers-link:focus {
+  color: #2196f3;
+}
+.customers {
+  background-color: #ffffff;
 }
 /*                  FOOTER            */
 .footer {
