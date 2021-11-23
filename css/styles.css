@@ -101,6 +101,10 @@ img {
   display: flex;
   align-items: center;
 }
+.header-conect {
+  display: flex;
+  align-items: center;
+}
 
 .header-container {
   display: flex;
@@ -145,7 +149,6 @@ img {
 }
 .header-mail-icon {
   fill: #757575;
-  text-align: center;
   margin-right: 10px;
 }
 
@@ -390,11 +393,18 @@ img {
 .customers {
   background-color: #ffffff;
 }
+.regular-custumers {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 /*                  FOOTER            */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--header-text-color);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -410,6 +420,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+.footer-adress-block {
+  margin-right: 70px;
 }
 
 .footer-mail {
@@ -447,6 +460,47 @@ img {
   margin-top: 20px;
   margin-bottom: 9px;
 }
+.footer-link-title {
+  font-family: Roboto;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-adress-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-adress-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-adress-item + .footer-adress-item {
+  margin-left: 10px;
+}
+.footer-adress-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.footer-adress-icon {
+  fill: currentColor;
+}
+.footer-adress-link:hover,
+.footer-adress-link:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
 /*                               PORTFOLIO */
 .portfolio-hero {
   background-color: #ffffff;
@@ -463,13 +517,19 @@ img {
   border-style: none;
   background: #f5f4fa;
   border-radius: 4px;
+
   padding: 6px 22px;
   border-width: 0;
   color: var(--header-text-color);
 }
+.btn-item {
+  fill: currentColor;
+}
+
 .btn-item:hover,
 .btn-item:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 .filters-list {
   display: flex;
