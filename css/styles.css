@@ -138,6 +138,8 @@ img {
 .header-mail {
   font-family: inherit;
   font-weight: 500;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -146,9 +148,9 @@ img {
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.header-mail-icon {
-  fill: #757575;
+.header-icon {
   margin-right: 10px;
 }
 
@@ -156,6 +158,8 @@ img {
   margin-left: 50px;
   font-family: inherit;
   font-weight: 500;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -164,10 +168,9 @@ img {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.header-tel-icon {
-  margin-right: 10px;
-}
+
 .header-conect {
   margin-left: auto;
 }
@@ -259,6 +262,7 @@ img {
   width: 270px;
 }
 .hero-section {
+  background-color: #fff;
   padding-top: 94px;
 }
 
@@ -284,6 +288,9 @@ img {
 }
 .hero-image:not(:last-child) {
   margin-right: 30px;
+}
+.second-hero-section {
+  background-color: #fff;
 }
 
 /*                TEAM SECTIONS */
@@ -390,7 +397,7 @@ img {
 .regular-customers-link:focus {
   color: #2196f3;
 }
-.customers {
+.regular-customers-section {
   background-color: #ffffff;
 }
 .regular-custumers {
@@ -491,7 +498,7 @@ img {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: #afb1b8;
+  color: #ffffff;
 }
 .footer-adress-icon {
   fill: currentColor;
