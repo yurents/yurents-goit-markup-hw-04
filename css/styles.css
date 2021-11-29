@@ -148,10 +148,16 @@ img {
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 .header-icon {
   margin-right: 10px;
+  display: flex;
+  text-align: center;
+  fill: currentColor;
+}
+.header-icon:hover,
+.header-icon:focus {
+  fill: var(--accent-color);
 }
 
 .header-tel {
@@ -168,7 +174,6 @@ img {
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .header-conect {
@@ -396,6 +401,7 @@ img {
 .regular-customers-link:hover,
 .regular-customers-link:focus {
   color: #2196f3;
+  border: 1px solid #2196f3;
 }
 .regular-customers-section {
   background-color: #ffffff;
@@ -407,7 +413,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--header-text-color);
+  background-color: #2f303a;
 }
 .footer-container {
   display: flex;
